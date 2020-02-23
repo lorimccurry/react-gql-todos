@@ -2,14 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import ApolloClient from 'apollo-boost';
-import { ApolloProvider } from '@apollo/react-hooks';
+import {
+  ApolloProvider
+} from '@apollo/react-hooks';
 
 const client = new ApolloClient({
-  uri: 'https://react-todo-graphql-lori.herokuapp.com/v1/graphql'
+  uri: 'ENTER YOUR HASURA APP'
 })
 
-ReactDOM.render(
-  <ApolloProvider client={client}>
-    <App />
-  </ApolloProvider>
-  , document.getElementById('root'));
+ReactDOM.render( <
+    ApolloProvider client = {
+      client
+    } >
+    <
+    App / >
+    <
+    /ApolloProvider>, document.getElementById('root'));
