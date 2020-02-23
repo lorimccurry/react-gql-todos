@@ -10,11 +10,9 @@ const client = new ApolloClient({
   uri: 'ENTER YOUR HASURA APP'
 })
 
-ReactDOM.render( <
-    ApolloProvider client = {
-      client
-    } >
-    <
-    App / >
-    <
-    /ApolloProvider>, document.getElementById('root'));
+ReactDOM.render(
+  <ApolloProvider client = {client}>
+    <App />
+  </ApolloProvider>,
+  document.getElementById('root')
+);
